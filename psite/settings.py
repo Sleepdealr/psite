@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+STATIC_ROOT = "/var/www/calliah/static"
+
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
