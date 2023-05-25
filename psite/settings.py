@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y5znma$&kd8@z-af*@_-3icrge1%q(3nvd_4_4fze+g(3&wd)!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['https://sleepdealer.xyz', '127.0.0.1']
 
 STATIC_ROOT = "/var/www/calliah/static"
 
@@ -35,7 +35,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "calliahsite/static"
 ]
 
-MEDIA_ROOT = 'calliahsite/media'
+MEDIA_ROOT = '/var/www/calliah/media'
 
 MEDIA_URL = 'media/'
 

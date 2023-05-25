@@ -23,7 +23,7 @@ def get_template_items(title):
         links.append({"name": link.name, "link": link.link})
     return {
         "links": links,
-        "image": ["Lain", "https://sleepdealer.xyz/img/pfp_lain.jpg"],
+        "image": ["Lain", "https://sleepdealer.xyz/media/pfp_lain.jpg"],
         "title": title,
         "articles": articles,
     }
