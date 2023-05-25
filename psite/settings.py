@@ -31,6 +31,8 @@ STATIC_ROOT = "/var/www/calliah/static"
 
 STATIC_URL = "static/"
 
+CSRF_TRUSTED_ORIGINS = ['https://sleepdealer.xyz']
+
 STATICFILES_DIRS = [
     BASE_DIR / "calliahsite/static"
 ]
