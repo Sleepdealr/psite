@@ -50,3 +50,7 @@ class Redirect(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ImageUpload(models.Model):
+    specifications = models.FileField()

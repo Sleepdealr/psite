@@ -1,9 +1,10 @@
 from django.contrib import admin
 
-from .models import Article, Category, HeaderArticle, HeaderLink, Redirect
+from calliahsite import models
 
-admin.site.register(Article)
-admin.site.register(Category)
-admin.site.register(HeaderArticle)
-admin.site.register(HeaderLink)
-admin.site.register(Redirect)
+admin.site.register(models.Article)
+admin.site.register(models.Category)
+admin.site.register(models.HeaderArticle)
+admin.site.register(models.HeaderLink)
+admin.site.register(models.Redirect)
+admin.site.register(models.ImageUpload)
