@@ -1,13 +1,12 @@
-import environ
+import configparser
 from django.http import HttpResponse, HttpResponseNotFound
 from django.template import loader
 from django.shortcuts import redirect
 from . import parser
 from .models import Article, Category, Redirect
 
-env = environ.Env()
-environ.Env.read_env()
-
+config = configparser.ConfigParser()
+config.read('site.conf')
 
 def index(request):
     template = loader.get_template('index.html')
@@ -66,8 +65,8 @@ def articles(request):
 def contact(request):
     template = loader.get_template("contact.html")
     context = {
-        "discord": env("DISCORD"),
-        "email": env("EMAIL")
+        "discord": config["contact"]["discord"],
+        "email": " at ".join(config["contact"]["email"].split("@"))
     }
     context.update(parser.get_template_items("Contact"))
     return HttpResponse(template.render(context, request))

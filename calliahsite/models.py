@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Category(models.Model):
     class Meta:
         verbose_name = "Category"
@@ -53,4 +52,4 @@ class Redirect(models.Model):
 
 
 class ImageUpload(models.Model):
-    specifications = models.FileField()
+    specifications = models.FileField(upload_to="")
